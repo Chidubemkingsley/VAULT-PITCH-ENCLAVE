@@ -193,4 +193,4 @@ This integrated system provides:
 5. **Verifiable Trust** - Attestation endpoint proves enclave integrity
 6. **Seamless UI** - Index.html connects to backend APIs
 
-**To deploy:** Place all files in `/vaultpitch-enclave/` and run `dstack apply`. The system is fully self-contained and ready for TEE deployment.
+**To deploy:** Place all files in `/vaultpitch-enclave/` and run `Python main.py``. The system is fully self-contained and ready for TEE deployment.
