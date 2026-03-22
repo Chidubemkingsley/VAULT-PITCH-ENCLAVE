@@ -1,0 +1,30 @@
+{
+  "project": "VaultPitch",
+  "tiers": {
+    "0": {
+      "label": "Anonymous",
+      "data": "VaultPitch: Verifiable AI for Secure Data Rooms. Mission: Make confidential pitch sharing secure, verifiable, and legally enforceable using TEE hardware. Team: 4-person team with cryptography and legal expertise. Market: $5B+ secure data room market.",
+      "blocked": ["FINANCIALS", "ARCHITECTURE", "KEYS", "PRIVATE_KEY", "API_KEY", "CAP_TABLE", "PROJECTIONS", "MRENCLAVE_INTERNAL"]
+    },
+    "1": {
+      "label": "Verified Judge",
+      "data": "Traction: 47 pilot teams, 3 hackathons, $8,200 MRR in beta. 3 VC firms in talks. Roadmap: Q2 public launch, Q3 enterprise tier, Q4 on-chain NDA marketplace. Competitive advantages: First mover in TEE-enforced NDAs, IC3 research partnership.",
+      "blocked": ["PRIVATE_KEYS", "INTERNAL_DOCS", "ARCHITECTURE_DETAILS", "SOURCE_CODE_INTERNAL"]
+    },
+    "2": {
+      "label": "Lead Partner",
+      "data": "Architecture: Intel TDX + Dstack confidential containers + Llama-3 with NDAI middleware. Stack: Rust (TEE core), Python (NDAI guardrail), React (frontend), Solidity (NDA contracts). Financials: $180k runway, seeking $500k seed, 18-month path to $50k MRR. IP: 2 provisional patents on NDAI enforcement mechanisms.",
+      "blocked": []
+    }
+  },
+  "kms_config": {
+    "endpoint": "https://kms.dstack.dev",
+    "key_rotation_days": 30,
+    "sealed_assets": ["pitch_deck.pdf", "financial_model.xlsx", "architecture_diagram.png"]
+  },
+  "cycles_protocol": {
+    "graph_endpoint": "https://cycles.dstack.dev",
+    "attribution_required": true,
+    "retention_days": 365
+  }
+}

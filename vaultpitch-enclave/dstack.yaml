@@ -1,0 +1,10 @@
+type: service
+name: vaultpitch-enclave
+image: .
+resources:
+  cpu: 4
+  memory: 16GB
+env:
+  - NDAI_STRICT_MODE=true
+  - KMS_URL=https://kms.dstack.dev
+port: 8000
